@@ -17,6 +17,8 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+        env:
+          PATH_PREFIX: 11ty-template
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2.0.1
