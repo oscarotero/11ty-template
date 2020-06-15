@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="{{ site.title }}" />
   </head>
 
-  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+  <body class="{{ bodyClass | class }}">
     <div class="container">
       {{ content | safe }}
     </div>
